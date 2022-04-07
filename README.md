@@ -1,19 +1,9 @@
-# SimplePHPMvcOOP
+# Proyecto Final Grupo #4 Negocios Web - Cafeteria
 
-## Instalación
-* Clonar repositorio en una carpeta en htdocs o www segun el servidor web
-* Instalar composer [https://getcomposer.org]
-* Instalar las dependencias en la misma carpeta donde esta composer.json
-    ``` php composer.phar install ```
-    ``` composer install ```
-* Copiar el archivo ```renameTo_parameters.env``` a ```parameters.env``` y actualizar los valores segun sus parámetros
-* En un navegar ir al proyecto con ```index.php?page=index```
-* Para generar 
-## Pasos
-
-1. Crear en ```src>Controllers``` dos archivos de ```Entidad.php``` extendiento la clase de ```PublicController```
-
-2. Crear en la carpeta ```src>Views``` dos archivos de
-```Entidad.view.tpl```
-
-3. Crear en la carpeta ```src>Dao``` un archivo ```Entidad.php``` que extienda la clase ```Table.php``` donde elaborará la manipulación de la tabla.
+## Integrantes
+*Diana del Carmen Alejandra Manzanarez Moran 0501-1999-07881
+*Greysi Lizeth Molina Maldonado 0801-2001-06327
+*Karen Alexandra Juarez Gutiérrez 1706-2000-00271
+*Denia Julissa Chavarría López  0318-2002-01281
+*Karla Gissel López Cáceres 0318-2003-01323
+*Carlos Andres Rosales Paz 0501-1998-11318
