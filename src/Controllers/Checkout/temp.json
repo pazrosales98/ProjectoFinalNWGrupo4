@@ -1,0 +1,107 @@
+{
+    "statusCode": 201,
+    "result": {
+        "id": "4BL434557G4458124",
+        "status": "COMPLETED",
+        "purchase_units": [
+            {
+                "reference_id": "test1639274213",
+                "shipping": {
+                    "name": {
+                        "full_name": "John Doe"
+                    },
+                    "address": {
+                        "address_line_1": "Free Trade Zone",
+                        "admin_area_2": "Tegucigalpa",
+                        "admin_area_1": "Tegucigalpa",
+                        "postal_code": "12345",
+                        "country_code": "HN"
+                    }
+                },
+                "payments": {
+                    "captures": [
+                        {
+                            "id": "8UC7264766568610E",
+                            "status": "COMPLETED",
+                            "amount": {
+                                "currency_code": "USD",
+                                "value": "135.00"
+                            },
+                            "final_capture": true,
+                            "seller_protection": {
+                                "status": "ELIGIBLE",
+                                "dispute_categories": [
+                                    "ITEM_NOT_RECEIVED",
+                                    "UNAUTHORIZED_TRANSACTION"
+                                ]
+                            },
+                            "seller_receivable_breakdown": {
+                                "gross_amount": {
+                                    "currency_code": "USD",
+                                    "value": "135.00"
+                                },
+                                "paypal_fee": {
+                                    "currency_code": "USD",
+                                    "value": "6.92"
+                                },
+                                "net_amount": {
+                                    "currency_code": "USD",
+                                    "value": "128.08"
+                                }
+                            },
+                            "links": [
+                                {
+                                    "href": "https:\/\/api.sandbox.paypal.com\/v2\/payments\/captures\/8UC7264766568610E",
+                                    "rel": "self",
+                                    "method": "GET"
+                                },
+                                {
+                                    "href": "https:\/\/api.sandbox.paypal.com\/v2\/payments\/captures\/8UC7264766568610E\/refund",
+                                    "rel": "refund",
+                                    "method": "POST"
+                                },
+                                {
+                                    "href": "https:\/\/api.sandbox.paypal.com\/v2\/checkout\/orders\/4BL434557G4458124",
+                                    "rel": "up",
+                                    "method": "GET"
+                                }
+                            ],
+                            "create_time": "2022-04-06T19:45:01Z",
+                            "update_time": "2022-04-06T19:45:01Z"
+                        }
+                    ]
+                }
+            }
+        ],
+        "payer": {
+            "name": {
+                "given_name": "John",
+                "surname": "Doe"
+            },
+            "email_address": "sb-k8m6e14632591@personal.example.com",
+            "payer_id": "W6WL6CKVTK63G",
+            "address": {
+                "country_code": "HN"
+            }
+        },
+        "links": [
+            {
+                "href": "https:\/\/api.sandbox.paypal.com\/v2\/checkout\/orders\/4BL434557G4458124",
+                "rel": "self",
+                "method": "GET"
+            }
+        ]
+    },
+    "headers": {
+        "": "",
+        "Content-Type": "application\/json",
+        "Content-Length": "1447",
+        "Connection": "keep-alive",
+        "Date": "Wed, 06 Apr 2022 19",
+        "Application_id": "APP-80W284485P519543T",
+        "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate",
+        "Caller_acct_num": "9PV5EEBG3CTGL",
+        "Paypal-Debug-Id": "6bc0eaa9a3539",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains"
+    }
+}
